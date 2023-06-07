@@ -1,8 +1,8 @@
-local job = vim.fn.jobstart(
+vim.fn.jobstart(
     'git pull',
     {
         cwd = '/home/nvim/.config/nvim',
-        -- on_exit = print("exit"),
+        on_exit = print("git pull exited"),
         -- on_stdout = print("stdout"),
         -- on_stderr = print("stderr")
     }
