@@ -1,3 +1,13 @@
+local job = vim.fn.jobstart(
+    'git pull',
+    {
+        cwd = '/home/nvim/.config/nvim',
+        -- on_exit = print("exit"),
+        -- on_stdout = print("stdout"),
+        -- on_stderr = print("stderr")
+    }
+)
+
 require("nils_config.remap")
 require("nils_config.lazy")
 
